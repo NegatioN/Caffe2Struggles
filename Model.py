@@ -4,7 +4,7 @@ from onnx import ModelProto
 import numpy as np
 from caffe2.python import core,workspace,model_helper,brew,optimizer
 
-#workspace.GlobalInit(["caffe2", "--caffe2_log_level=-2"])
+workspace.GlobalInit(["caffe2", "--caffe2_log_level=0"])
 
 
 class Model:

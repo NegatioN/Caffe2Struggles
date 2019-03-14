@@ -11,6 +11,6 @@ ENV OMP_NUM_THREADS=1
 ENV MKL_NUM_THREADS=1
 
 
-RUN apt-get install time -y
+RUN apt-get install time htop -y
 
-CMD ["time", "python", "simple_calculation.py"]
+ENTRYPOINT ["time", "python", "simple_calculation.py"]
